@@ -17,11 +17,11 @@ class NAME_OF_CNN_HERE(nn.Module): #Name of CNN architecture. Rename to another 
             transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
         ])
         
-        googlnet = models.CHANGE_PYTORCH_MODE_HERE(pretrained=True)
+        change_pytorch_model_here = models.CHANGE_PYTORCH_MODEL_HERE(pretrained=True)
         set_device(device) #set device
-        googlnet.float()
-        googlnet.cuda()
-        googlnet.eval()
+        change_pytorch_model_here.float()
+        change_pytorch_model_here.cuda()
+        change_pytorch_model_here.eval()
         module_list = list(CHANGE_PYTORCH_MODEL_HERE.children())
         self.conv5 = nn.Sequential(*module_list[: -XXX_HERE])  # XXX_HERE number of layer you want
 
