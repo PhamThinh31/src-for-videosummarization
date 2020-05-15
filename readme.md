@@ -1,4 +1,4 @@
-# CNN.py (Convolutional Neural Network Feature Extractor)
+# extract-feaute.py (Convolutional Neural Network Feature Extractor)
 __Version__: 0.3
 ## Requirements
 The main library
